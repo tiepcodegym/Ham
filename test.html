@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Học lập trình miễn phí tại freetuts.net</h1>
+<p>Click vào button để kiểm tra.</p>
+
+<button onclick="myFunction()">Run</button>
+
+<p id="demo"></p>
+
+<script>
+    var subject = ["php", "css", "html", "js"];
+    document.getElementById("demo").innerHTML = subject;
+
+    function myFunction() {
+        subject.splice(1, 1, "python", "c#", "ios");
+        document.getElementById("demo").innerHTML = subject;
+    }
+</script>
+</body>
+</html>
